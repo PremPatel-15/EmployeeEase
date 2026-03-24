@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="form.css" />
+        <title>Form Frame</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Id</span>
+                <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Enter your Employee Id"
+                    aria-label="EmpId"
+                    aria-describedby="basic-addon1"
+                />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">First and last name</span>
+                <input
+                    type="text"
+                    aria-label="First name"
+                    placeholder="Enter First Name"
+                    class="form-control"
+                />
+                <input
+                    type="text"
+                    aria-label="Last name"
+                    placeholder="Enter Last Name"
+                    class="form-control"
+                />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Department Id and Name</span>
+                <input
+                    type="number"
+                    aria-label="Department Id"
+                    placeholder="Enter Department Id"
+                    class="form-control"
+                />
+                <input
+                    type="text"
+                    aria-label="Department Name"
+                    placeholder="Enter Department Name"
+                    class="form-control"
+                />
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your Email Address"
+                    aria-label="Employee Email"
+                    aria-describedby="basic-addon2"
+                />
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                    >Designation</span
+                >
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your Job Role"
+                    aria-label="Designation"
+                    aria-describedby="basic-addon1"
+                />
+            </div>
+            <button type="submit" class="btn btn-outline-success">Save</button>
+            <button type="submit" class="btn btn-outline-warning">
+                Update
+            </button>
+            <button type="submit" class="btn btn-outline-danger">Delete</button>
+        </form>
+
+        <script src="department.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
