@@ -15,7 +15,7 @@ body {
 
 .sup-container {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0.5rem;
     border-radius: 10px;
     background-color: #dee2e6;
 }
