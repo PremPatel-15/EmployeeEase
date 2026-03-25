@@ -16,16 +16,23 @@
         <div class="sup-container">
             <div class="header">
                 <h5>Output</h5>
-                <button type="button" class="btn btn-outline-info b">
+                <button
+                    type="button"
+                    class="btn btn-outline-info b"
+                    id="showbtn"
+                >
                     show
                 </button>
             </div>
             <hr />
             <div class="input-group mb-3">
                 <span class="input-group-text text-custom">Employee ID: </span>
-                <ul class="list-group">
-                    <li class="list-group-item" id="empId">1</li>
-                </ul>
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Id you want see"
+                    id="empId"
+                />
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">Full Name: </span>
@@ -62,5 +69,12 @@
                 </ul>
             </div>
         </div>
+
+        <script src="view.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

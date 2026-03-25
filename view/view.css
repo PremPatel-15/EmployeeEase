@@ -1,6 +1,9 @@
+body {
+    background-color: rgb(244, 238, 255);
+}
 .sup-container {
     padding: 1rem;
-    background-color: #dee2e6;
+    background-color: rgb(220, 214, 247);
     margin: 1rem 0.5rem 1rem 1rem;
     border-radius: 10px;
     font-family:
@@ -15,10 +18,6 @@
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-}
-
-.input-group-item {
-    background-color: #dee2e6;
 }
 
 .header {
