@@ -83,3 +83,24 @@ update.addEventListener("click", () => {
             alert("Error updating employee ❌");
         });
 });
+
+remove.addEventListener("click", () => {
+    const empIdVal = empId.value;
+
+    fetch(`https://localhost:7253/employee/${empIdVal}`, {
+        method: "DELETE",
+    })
+        .then((data) => {
+            alert("Employee deleted successfully ✅");
+            empId.value = "";
+            fName.value = "";
+            lName.value = "";
+            email.value = "";
+            desig.value = "";
+            deptId.value = "";
+        })
+        .catch((err) => {
+            console.log("Error:", err);
+            alert("Error deleting employee ❌");
+        });
+});
