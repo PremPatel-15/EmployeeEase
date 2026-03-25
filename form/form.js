@@ -45,3 +45,41 @@ save.addEventListener("click", () => {
             alert("Error adding employee ❌");
         });
 });
+
+update.addEventListener("click", () => {
+    const jsonData = {
+        empid: parseInt(empId.value),
+        fname: fName.value,
+        lname: lName.value,
+        email: email.value,
+        designation: desig.value,
+        deptid: parseInt(deptId.value),
+    };
+
+    fetch(`https://localhost:7253/employee`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(jsonData),
+    })
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error("Failed to update data");
+            }
+            return res.json();
+        })
+        .then((data) => {
+            alert("Employee updated successfully ✅");
+            empId.value = "";
+            fName.value = "";
+            lName.value = "";
+            email.value = "";
+            desig.value = "";
+            deptId.value = "";
+        })
+        .catch((err) => {
+            console.log("Error:", err);
+            alert("Error updating employee ❌");
+        });
+});
