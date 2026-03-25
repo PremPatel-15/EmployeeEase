@@ -11,14 +11,27 @@ showbtn.addEventListener("click", () => {
     fetch(`https://localhost:7253/employee/${empIdVal}`)
         .then((res) => res.json())
         .then((data) => {
-            empName.innerHTML = data.full_name;
-            deptId.innerHTML = data.deptid;
-            deptName.innerHTML = data.dept;
-            email.innerHTML = data.email;
-            desig.innerHTML = data.designation;
+            if (data.ok) {
+                empName.innerHTML = data.full_name;
+                deptId.innerHTML = data.deptid;
+                deptName.innerHTML = data.dept;
+                email.innerHTML = data.email;
+                desig.innerHTML = data.designation;
+            } else {
+                empName.innerHTML = "No Employee Found";
+                deptId.innerHTML = "";
+                deptName.innerHTML = "";
+                email.innerHTML = "";
+                desig.innerHTML = "";
+            }
         })
         .catch((err) => {
-            console.log("Error: ", err);
+            console.error("Error: ", err);
+            empName.innerHTML = "No Employee Found";
+            deptId.innerHTML = "";
+            deptName.innerHTML = "";
+            email.innerHTML = "";
+            desig.innerHTML = "";
         });
 });
 
