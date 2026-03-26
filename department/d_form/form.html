@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="form.css" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <title>Form Frame</title>
+    </head>
+    <body>
+        <div class="sup-container">
+            <div class="header">
+                <h2>EmployeeEase</h2>
+                <p>"A Super useful Employee Management Application"</p>
+                <hr />
+            </div>
+
+            <form action="" method="post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Id</span>
+                    <input
+                        type="number"
+                        id="deptId"
+                        class="form-control"
+                        placeholder="Enter your Department Id"
+                        aria-label="deptId"
+                        aria-describedby="deptId"
+                    />
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Department</span>
+                    <input
+                        type="text"
+                        id="deptName"
+                        class="form-control"
+                        placeholder="Enter your Department"
+                        aria-label="deptName"
+                        aria-describedby="basic-addon1"
+                    />
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text me-2"
+                        >Department with there Id</span
+                    >
+                    <span class="input-group-text">1. HR</span>
+                    <span class="input-group-text">2. IT</span>
+                    <span class="input-group-text">3. Finance</span>
+                    <span class="input-group-text">4. Sales</span>
+                    <span class="input-group-text">5. Marketing</span>
+                </div>
+                <button
+                    type="button"
+                    class="btn btn-outline-success b"
+                    id="save"
+                >
+                    Save
+                </button>
+                <button
+                    type="button"
+                    class="btn btn-outline-warning b"
+                    id="update"
+                >
+                    Update
+                </button>
+                <button
+                    type="button"
+                    class="btn btn-outline-danger b"
+                    id="remove"
+                >
+                    Delete
+                </button>
+            </form>
+        </div>
+
+        <script src="form.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
